@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Shane Abrahams</title>
+
+
+    <link rel="stylesheet" href="css/topbox.css">
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/animate/animate.css" />
+    <link rel="stylesheet" href="assets/animate/set.css" />
+
+    <!-- gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/hnet.com-image.ico" type="image/x-icon">
+    <link rel="icon" href="images/hnet.com-image.ico" type="image/x-icon">
+
+    <!-- social media icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/form.js"></script>
+
+    <script src="PHP/form.php"></script>
+
+    <!-- Google reCAPTCHA script  -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="topbar animated fadeInLeftBig"></div>
+
+    <!-- Header Starts -->
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <!-- Logo Starts -->
+              <a class="navbar-brand" href="#home"><img src="images/navbar-logo.png" alt="logo"></a>
+              <!-- #Logo Ends -->
+
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+
+
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cv/shane-abrahams-cv.pdf" target="_blank">CV</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <!-- #Nav Ends -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- #Header ends -->
+
+
+    <form>
+      <section>
+        <div class="container1 section-small-padding text-center full-width">
+          <div class="container1">
+            <div class="form-container1 z-depth-5">
+              <h3>Get in Touch</h3>
+              <div class="row">
+                <form class="col s12" id="reused_form">
+                  <div class="row">
+                    <div method="POST" class="input-field col s12">
+                      <input id="name" type="text" placeholder="Name" name="name" required class="validate">
+                      <!-- <label for="name">Name</label> -->
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" placeholder="Email" name="email" required class="validate">
+                      <!-- <label for="email">Email</label> -->
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="message" type="message" placeholder="Message" name="message"
+                        class="materialize-textarea" class="validate"></textarea>
+                      <!-- <label for="message">Message</label> -->
+                    </div>
+                  </div>
+              </div>
+
+              <br>
+              <!--  -->
+              <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lc6EI8bAAAAAN-VfKR6vthlru5qGs4yAj0obx9J">
+              </div>
+              <br>
+              <br>
+
+
+              <div>
+                <button class="waves-effect waves-light btn submitbtn" type="submit" value="Send Email"
+                  onclick="sendEmail()">Submit</button>
+              </div>
+    </form>
+    <div id="error_message" style="width:100%; height:100%; display:none; ">
+      <h4>
+        Error
+      </h4>
+      Sorry there was an error sending your form.
+    </div>
+    <div id="success_message" style="width:100%; height:100%; display:none; ">
+      <h4>
+        Success! Your Message was Sent Successfully.
+      </h4>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
+
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <section class="section-small-padding text-center background-dark full-width">
+        <h4 class="text-strong">Social Media Links:</h4>
+        <a href="https://www.facebook.com/shanesabrahams/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/MrAbrahams02" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/shane-abrahams-007" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCMn02scf4_raXgnww0cdRhg" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/shaneabrahamsza/" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-github"></a>
+
+        <div class="line">
+          <div class="margin">
+            <!-- Collumn 1 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-30">
+              <h3 class="text-strong text-size-16">Location</h3>
+              <p class="text-size-14">
+                Cape Town, Western Cape<br>
+                South Africa
+              </p>
+            </div>
+            <!-- Collumn 2 -->
+            <div class="s-12 m-12 l-4 margin-m-bottom-30">
+              <h3 class="text-strong text-size-16">E-mail</h3>
+              <p class="text-size-14">
+                s.abrahams02@gmail.com<br>
+              </p>
+            </div>
+            <!-- Collumn 3 -->
+            <div class="s-12 m-12 l-4 ">
+              <h3 class="text-strong text-size-16">Contact Number</h3>
+              <p class="text-size-14">
+                079 713 1007<br>
+                <!-- 000 000 0000<br> -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 0, 0, 0.80);">
+
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="text-center">
+          <p class="text-size-12">&copy; 2021, Lord Shane Abrahams - Graphic Designer & Developer. All Rights Reserved.
+          </p>
+          <!-- <p class="text-size-12">All Rights Reserved.</p> -->
+        </div>
+      </section>
+    </footer>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+    <script src="app.js"></script>
+
+  </body>

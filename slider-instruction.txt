@@ -1,0 +1,33 @@
+
+This is how the popup slider works: 
+
+To add a item in your portfolio you can add a link with this attribute ( data-lightbox-gallery="gallery1" class="lightbox" aria-haspopup="dialog" )
+
+It will look like this : 
+
+<a href="images/image.jpg" title="Business Branding Logos & other content" data-lightbox-gallery="gallery1" class="lightbox" aria-haspopup="dialog"></a>
+
+All the links that has the attribute ( data-lightbox-gallery="gallery1" ) will be in a slider together.
+
+You can create more groups by adding a number to the gallery attribute e.g ( data-lightbox-gallery="gallery2" ) , gallery3 etc
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+The example below contains your first slider group
+
+ <figure class="effect-oscar  wowload fadeIn">
+
+        <img src="images/portfolio/1.2.jpg" alt="img01"/>
+
+        <figcaption>
+
+            <h2>Business Utensils</h2>
+            <p>Set the right tone in all your correspondence with personalized business stationery.<br>
+
+            <a href="images/portfolio/Business Utensils/Branding.jpg" title="Business Branding Logos & other content" data-lightbox-gallery="gallery1" class="lightbox" aria-haspopup="dialog">View more</a></p>
+            <a href="images/portfolio/Business Utensils/Honest Chocolate Website/Shane Abrahams 215285697 Website New-1.jpg" title="Honest Chocolate Website Page 1" data-lightbox-gallery="gallery1" class="lightbox" aria-haspopup="dialog"></a>
+            <a href="images/portfolio/Business Utensils/Honest Chocolate Website/Shane Abrahams 215285697 Website New-2.jpg" title="Honest Chocolate Website Page 2" data-lightbox-gallery="gallery1" class="lightbox" aria-haspopup="dialog"></a>
+
+        </figcaption>
+    </figure>
+
